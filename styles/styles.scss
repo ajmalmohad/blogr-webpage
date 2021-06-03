@@ -1,0 +1,37 @@
+// Fonts (OverPass + Ubuntu)
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+//Colors
+$text-white: hsl(0, 0%, 100%);
+$footer-text-gray:hsl(240, 2%, 79%);
+$content-dark-gray:hsl(207, 13%, 34%);
+$footer-bg-blue:hsl(240, 10%, 16%);
+$body-bg-blue:hsl(237, 17%, 21%);
+$body-bg-blue-desat:hsl(237, 23%, 32%);
+$intro-light-red:hsl(353, 100%, 62%);
+$intro-v-light-red:hsl(13, 100%, 72%);
+$cta-text-light-red:hsl(356, 100%, 66%);
+$cta-hover-bg-red:hsl(355, 100%, 74%);
+$body-head-darkblue:hsl(208, 49%, 24%);
+
+//Font Weights
+$overpass-light-weight:300;
+$overpass-bold-weight:600;
+$ubuntu-light-weight:400;
+$overpass-medium-weight:500;
+$overpass-bold-weight:700;
+
+//Breaking Points
+$desktop-max:1440px;
+$mobile-max:550px;
+$mobile-min:375px;
+
+//Reset
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+//Blogr
