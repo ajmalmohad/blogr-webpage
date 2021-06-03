@@ -10,16 +10,24 @@
 </head>
 <body>
     <div class="section1">
+        <div class="overlay"></div>
         <nav class="navbar">
             <img class="logo" src="./images/logo.svg"/>
-            <ul>
-                <li><p>Product</p></li>
-                <li><p>Company</p></li>
-                <li><p>Connect</p></li>
+            <ul class="one">
+                <a href="#"><li>Product</li></a>
+                <a href="#"><li>Company</li></a>
+                <div class="drop">
+                    <a href="#"><li>Connect</li></a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact</a>
+                        <a href="#">Newsletter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
             </ul>
-            <ul>
-                <li><p>Login</p></li>
-                <li><p>Signup</p></li>
+            <ul class="two">
+                <button class="login"><li><p>Login</p></li></button>
+                <button class="signup"><li><p>Signup</p></li></button>
             </ul>
         </nav>
         <div class="hero">

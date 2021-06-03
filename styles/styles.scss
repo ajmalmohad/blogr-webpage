@@ -19,13 +19,18 @@ $body-head-darkblue:hsl(208, 49%, 24%);
 $overpass-light-weight:300;
 $overpass-bold-weight:600;
 $ubuntu-light-weight:400;
-$overpass-medium-weight:500;
-$overpass-bold-weight:700;
+$ubuntu-medium-weight:500;
+$ubuntu-bold-weight:700;
 
 //Breaking Points
 $desktop-max:1440px;
 $mobile-max:550px;
 $mobile-min:375px;
+
+//Font
+$medium-font:16px;
+$main-font: 'Ubuntu', sans-serif;
+$second-font: 'Overpass', sans-serif;
 
 //Reset
 *{
@@ -33,5 +38,180 @@ $mobile-min:375px;
     padding:0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 
 //Blogr
+
+//Section1
+.section1 {
+    height:80vh;
+    width:100%;
+    background: $intro-light-red;
+    border-bottom-left-radius: 80px;
+    .overlay{
+        position: absolute;
+        background: url('./../images/bg-pattern-intro.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 40% 50%;
+        border-bottom-left-radius: 80px;
+        height:80vh;
+        width:100%;
+        opacity: 0.4;
+        z-index:1;
+    }
+    .navbar{
+        display: flex;
+        position: sticky;
+        justify-content: space-around;
+        font-family: $main-font;
+        font-weight: $ubuntu-medium-weight;
+        color:$text-white;
+        padding:20px;
+        z-index: 10;
+        ul{
+            list-style: none;
+        }
+        .logo{
+            flex:0.6;
+            height:55px;
+            padding:10px;
+            object-fit: contain;
+        }
+        a{
+            text-decoration: none;
+            color:$content-dark-gray;
+        }
+        .one{
+            flex:2;
+            display: flex;
+            font-size: $medium-font;
+            align-self: center;
+            li{
+                padding:0 10px;
+                color:$text-white;
+                &:hover{
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                }
+            }
+            .drop{
+                &:hover > .dropdown-content{
+                    display: flex;
+                    flex-direction: column;
+                    background: $text-white;
+                    padding:10px 20px;
+                    width: 130px;
+                    text-align: left;
+                    margin:10px;
+                    position: absolute;
+                    border-radius: 2px;
+                    box-shadow: 2px 2px 6px #3b3b3b;
+                    cursor: pointer;
+                }
+                .dropdown-content{
+                    display: none;
+                    a{
+                        margin:3px 0px;
+                    }
+                }
+            }
+        }
+        .two{
+            flex:1;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            button{
+                margin:0 10px;
+                padding:12px 25px;
+                font-size: $medium-font;
+                font-family: $main-font;
+                font-weight: $ubuntu-medium-weight;
+                color:$text-white;
+                cursor: pointer;
+            }
+            .login{
+                border:none;
+                border-radius: 30px;
+                background: transparent;
+                transition: 0.5s;
+                &:hover{
+                    background: rgba($text-white,0.4);
+                    color:$text-white;
+                    transition: 0.5s;
+                }
+            }
+            .signup{
+                border-radius: 30px;
+                border:none;
+                background: $text-white;
+                color:$intro-light-red;
+                transition: 0.5s;
+                &:hover{
+                    background: rgba($text-white,0.4);
+                    color:$text-white;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    .hero{
+        position: relative;
+        font-family: $second-font;
+        font-weight: $overpass-light-weight;
+        color:$text-white;
+        padding:20px;
+        z-index: 10;
+        top:15vh;
+        text-align: center;
+        h1{
+            font-size: 55px;
+        }
+        p{
+            padding:10px 0 30px 0;
+        }
+        .cta{
+            padding:20px;
+            button{
+                font-size: $medium-font;
+                font-family: $main-font;
+                font-weight: $ubuntu-bold-weight;
+                padding:12px 20px;
+                margin:0 10px;
+            }
+            .cta1{
+                border-radius: 30px;
+                border:none;
+                background: $text-white;
+                color:$intro-light-red;
+                transition: 0.5s;
+                &:hover{
+                    background: rgba($text-white,0.4);
+                    color:$text-white;
+                    transition: 0.5s;
+                }
+            }
+            .cta2{
+                border:1px solid $intro-v-light-red;
+                border-radius: 30px;
+                background: transparent;
+                transition: 0.5s;
+                color:$text-white;
+                &:hover{
+                    background: $text-white;
+                    color:$intro-light-red;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+//Section2
+.section2{
+    height:120vh;
+    width:100%;
+}
