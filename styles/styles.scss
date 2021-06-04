@@ -23,7 +23,8 @@ $ubuntu-medium-weight:500;
 $ubuntu-bold-weight:700;
 
 //Breaking Points
-$desktop-max:1440px;
+$desktop-med:1250px;
+$desktop-min:1000px;
 $mobile-max:550px;
 $mobile-min:375px;
 
@@ -369,6 +370,7 @@ body{
     padding:6% 8%;
     font-family: $second-font;
     font-weight: $overpass-bold-weight;
+    border-top-right-radius: 80px;
     .image{
         flex:1;
         img{
@@ -400,3 +402,44 @@ body{
         }
     }
 }
+
+//Media Queries
+@media only screen and (max-width: $desktop-med) {
+    .section2{
+        .image{
+            top:-10vh;
+            img{
+                height:90vh;
+            }    
+        }
+    }
+    .section3{
+        .content{
+        padding:0 80px;
+        padding-right: 30px;
+        }
+        .image{
+            img{
+                top:-5%;
+                left:8%;
+                height: 70vh;
+                object-fit: contain;
+            }
+        }
+    }
+    .section4{
+        .image{
+            top:30vh;
+            img{
+                height:80vh;
+            }    
+        }
+        .content{
+            padding:10% 80px;
+            padding-left: 50%;
+        }
+    }
+  }
+  @media only screen and (max-width: $desktop-min){
+
+  }

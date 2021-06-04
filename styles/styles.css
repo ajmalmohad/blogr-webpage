@@ -453,6 +453,7 @@ body {
   padding: 6% 8%;
   font-family: "Overpass", sans-serif;
   font-weight: 600;
+  border-top-right-radius: 80px;
 }
 
 .section5 .image {
@@ -498,5 +499,35 @@ body {
 .section5 .links1 ul li:hover, .section5 .links2 ul li:hover, .section5 .links3 ul li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1250px) {
+  .section2 .image {
+    top: -10vh;
+  }
+  .section2 .image img {
+    height: 90vh;
+  }
+  .section3 .content {
+    padding: 0 80px;
+    padding-right: 30px;
+  }
+  .section3 .image img {
+    top: -5%;
+    left: 8%;
+    height: 70vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section4 .image {
+    top: 30vh;
+  }
+  .section4 .image img {
+    height: 80vh;
+  }
+  .section4 .content {
+    padding: 10% 80px;
+    padding-left: 50%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
