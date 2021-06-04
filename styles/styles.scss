@@ -269,3 +269,53 @@ body{
         }    
     }
 }
+
+//Section3
+.section3{
+    height:60vh;
+    border-top-right-radius: 80px;
+    width:100%;
+    background: $body-bg-blue-desat;
+    display: flex;
+    .image{
+        flex:1;
+        position: relative;
+        background: url(./../images/bg-pattern-circles.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        // background-attachment: fixed;
+        img{
+            position: absolute;
+            top:-10%;
+            left:15%;
+            height: 80vh;
+            object-fit: contain;
+        }
+    }
+    .content{
+        flex:1;
+        align-self: center;
+        font-family: $second-font;
+        font-weight: $overpass-bold-weight;
+        padding:0 80px;
+        padding-right: 160px;
+        h1{
+            font-size: $xl-font;
+            color:$text-white;
+            padding: 15px 0;
+        }
+        p{
+            color:$footer-text-gray;
+            line-height: 24px;
+        }
+    }
+}
+
+//Section4
+.section4{
+    height:140vh;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
