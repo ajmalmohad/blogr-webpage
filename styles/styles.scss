@@ -241,6 +241,7 @@ body{
         flex-direction: column;
         padding:6% 100px;
         padding-right: 50%;
+        align-items: center;
        .mini-head{
         font-size: $large-font;
        }
@@ -318,4 +319,42 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    font-family: $second-font;
+    font-weight: $overpass-bold-weight;
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding:10% 100px;
+        padding-left: 50%;
+        align-items: center;
+        justify-content: center;
+       .mini-head{
+        font-size: $large-font;
+        color:$body-head-darkblue;
+       }
+       p{
+        font-size: $medium-font;
+       }
+       .first,.second{
+           padding:20px 0;
+           p{
+               padding:10px 0;
+               padding-right: 30px;
+               color:$content-dark-gray;
+               line-height: 24px;
+           }
+       }
+    }
+    .image{
+        position: relative;
+        top:20vh;
+        left:-18%;
+        z-index: -1;
+        img{
+            position: absolute;
+            height:100vh;
+            object-fit: contain;
+            padding-left: 30%;
+        }    
+    }
 }

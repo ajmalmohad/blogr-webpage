@@ -280,6 +280,9 @@ body {
           flex-direction: column;
   padding: 6% 100px;
   padding-right: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section2 .text .mini-head {
@@ -379,5 +382,60 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+.section4 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10% 100px;
+  padding-left: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section4 .content .mini-head {
+  font-size: 26px;
+  color: #1f3f5b;
+}
+
+.section4 .content p {
+  font-size: 16px;
+}
+
+.section4 .content .first, .section4 .content .second {
+  padding: 20px 0;
+}
+
+.section4 .content .first p, .section4 .content .second p {
+  padding: 10px 0;
+  padding-right: 30px;
+  color: #4b5862;
+  line-height: 24px;
+}
+
+.section4 .image {
+  position: relative;
+  top: 20vh;
+  left: -18%;
+  z-index: -1;
+}
+
+.section4 .image img {
+  position: absolute;
+  height: 100vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-left: 30%;
 }
 /*# sourceMappingURL=styles.css.map */
