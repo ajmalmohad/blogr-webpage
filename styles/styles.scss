@@ -29,6 +29,8 @@ $mobile-min:375px;
 
 //Font
 $medium-font:16px;
+$large-font:26px;
+$xl-font:34px;
 $main-font: 'Ubuntu', sans-serif;
 $second-font: 'Overpass', sans-serif;
 
@@ -64,6 +66,7 @@ body{
     }
     .navbar{
         display: flex;
+        flex-direction: row;
         position: sticky;
         justify-content: space-around;
         font-family: $main-font;
@@ -79,6 +82,7 @@ body{
             height:55px;
             padding:10px;
             object-fit: contain;
+            cursor: pointer;
         }
         a{
             text-decoration: none;
@@ -87,6 +91,7 @@ body{
         .one{
             flex:2;
             display: flex;
+            flex-direction: row;
             font-size: $medium-font;
             align-self: center;
             li{
@@ -122,6 +127,7 @@ body{
         .two{
             flex:1;
             display: flex;
+            flex-direction: row;
             align-self: center;
             justify-content: center;
             button{
@@ -181,6 +187,7 @@ body{
                 font-weight: $ubuntu-bold-weight;
                 padding:12px 20px;
                 margin:0 10px;
+                cursor: pointer;
             }
             .cta1{
                 border-radius: 30px;
@@ -212,6 +219,53 @@ body{
 
 //Section2
 .section2{
-    height:120vh;
+    height:140vh;
     width:100%;
+    overflow: hidden;
+    padding:20vh 0;
+    font-family: $second-font;
+    font-weight: $overpass-bold-weight;
+    .heading{
+        color:$body-head-darkblue;
+    }
+    .head{
+        text-align: center;
+        font-size: $xl-font;
+    }
+    .content{
+        height:80vh;
+        position: relative;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding:6% 100px;
+        padding-right: 50%;
+       .mini-head{
+        font-size: $large-font;
+       }
+       p{
+        font-size: $medium-font;
+       }
+       .first,.second{
+           padding:20px 0;
+           p{
+               padding:10px 0;
+               padding-right: 30px;
+               color:$content-dark-gray;
+               line-height: 24px;
+           }
+       }
+    }
+    .image{
+        position: absolute;
+        top:-15vh;
+        right:0%;
+        z-index: -1;
+        img{
+            height:110vh;
+            object-fit: contain;
+            padding-left: 30%;
+        }    
+    }
 }
