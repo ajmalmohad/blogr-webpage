@@ -356,8 +356,8 @@ body {
       align-self: center;
   font-family: "Overpass", sans-serif;
   font-weight: 600;
-  padding: 0 80px;
-  padding-right: 160px;
+  padding: 0 100px;
+  padding-right: 120px;
 }
 
 .section3 .content h1 {
@@ -437,5 +437,11 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   padding-left: 30%;
+}
+
+.section5 {
+  height: 80vh;
+  width: 100%;
+  background: #25252d;
 }
 /*# sourceMappingURL=styles.css.map */

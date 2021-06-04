@@ -298,8 +298,8 @@ body{
         align-self: center;
         font-family: $second-font;
         font-weight: $overpass-bold-weight;
-        padding:0 80px;
-        padding-right: 160px;
+        padding:0 100px;
+        padding-right: 120px;
         h1{
             font-size: $xl-font;
             color:$text-white;
@@ -357,4 +357,11 @@ body{
             padding-left: 30%;
         }    
     }
+}
+
+//Section5
+.section5{
+    height:80vh;
+    width:100%;
+    background: $footer-bg-blue;
 }
