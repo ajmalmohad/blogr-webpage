@@ -440,8 +440,63 @@ body {
 }
 
 .section5 {
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   background: #25252d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 6% 8%;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+}
+
+.section5 .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section5 .image img {
+  height: 55px;
+  padding: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.section5 .links {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section5 .links1 h3, .section5 .links2 h3, .section5 .links3 h3 {
+  padding: 20px 0;
+  color: white;
+}
+
+.section5 .links1 ul li, .section5 .links2 ul li, .section5 .links3 ul li {
+  list-style: none;
+  padding: 5px 0;
+  color: #c8c8cb;
+}
+
+.section5 .links1 ul li:hover, .section5 .links2 ul li:hover, .section5 .links3 ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
