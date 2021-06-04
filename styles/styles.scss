@@ -25,6 +25,7 @@ $ubuntu-bold-weight:700;
 //Breaking Points
 $desktop-med:1250px;
 $desktop-min:1000px;
+$tablet:750px;
 $mobile-max:550px;
 $mobile-min:375px;
 
@@ -276,6 +277,7 @@ body{
 .section3{
     height:60vh;
     border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
     width:100%;
     background: $body-bg-blue-desat;
     display: flex;
@@ -406,6 +408,7 @@ body{
 //Media Queries
 @media only screen and (max-width: $desktop-med) {
     .section2{
+        height:120vh;
         .image{
             top:-10vh;
             img{
@@ -428,18 +431,75 @@ body{
         }
     }
     .section4{
+        height:120vh;
         .image{
-            top:30vh;
+            top:15vh;
             img{
                 height:80vh;
             }    
         }
         .content{
-            padding:10% 80px;
+            padding:10% 70px;
+            padding-left: 50%;
+        }
+    }
+    .section5{
+        height:50vh;
+    }
+  }
+@media only screen and (max-width: $desktop-min){
+    .section1{
+        .hero{
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+    .section2{
+        .image{
+            top:0vh;
+            img{
+                height:75vh;
+            }    
+        }
+        .text{
+            padding:6% 50px;
+            padding-right: 50%;
+           .mini-head{
+            font-size: 22px;
+           }
+           .first,.second{
+               p{
+                   line-height: 22px;
+               }
+           }
+        }
+    }
+    .section3{
+        height:50vh;
+        .image{
+            img{
+                top:4%;
+                left:5%;
+                height: 50vh;
+            }
+        }
+    }
+    .section4{
+        .image{
+            top:25vh;
+            img{
+                height:65vh;
+            }    
+        }
+        .content{
+            padding:10% 0px;
             padding-left: 50%;
         }
     }
   }
-  @media only screen and (max-width: $desktop-min){
-
+  @media only screen and (max-width: $tablet){
+      body{
+          display: none;
+      }
   }

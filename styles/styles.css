@@ -321,6 +321,7 @@ body {
 .section3 {
   height: 60vh;
   border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
   width: 100%;
   background: #3f4164;
   display: -webkit-box;
@@ -502,6 +503,9 @@ body {
 }
 
 @media only screen and (max-width: 1250px) {
+  .section2 {
+    height: 120vh;
+  }
   .section2 .image {
     top: -10vh;
   }
@@ -519,15 +523,67 @@ body {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .section4 {
+    height: 120vh;
+  }
   .section4 .image {
-    top: 30vh;
+    top: 15vh;
   }
   .section4 .image img {
     height: 80vh;
   }
   .section4 .content {
-    padding: 10% 80px;
+    padding: 10% 70px;
     padding-left: 50%;
+  }
+  .section5 {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section1 .hero h1 {
+    font-size: 45px;
+  }
+  .section2 .image {
+    top: 0vh;
+  }
+  .section2 .image img {
+    height: 75vh;
+  }
+  .section2 .text {
+    padding: 6% 50px;
+    padding-right: 50%;
+  }
+  .section2 .text .mini-head {
+    font-size: 22px;
+  }
+  .section2 .text .first p, .section2 .text .second p {
+    line-height: 22px;
+  }
+  .section3 {
+    height: 50vh;
+  }
+  .section3 .image img {
+    top: 4%;
+    left: 5%;
+    height: 50vh;
+  }
+  .section4 .image {
+    top: 25vh;
+  }
+  .section4 .image img {
+    height: 65vh;
+  }
+  .section4 .content {
+    padding: 10% 0px;
+    padding-left: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
