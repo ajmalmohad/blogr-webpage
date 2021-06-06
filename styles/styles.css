@@ -283,6 +283,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: left;
 }
 
 .section2 .text .mini-head {
@@ -316,6 +317,10 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   padding-left: 30%;
+}
+
+.section2 .mobile-sec2-img {
+  display: none;
 }
 
 .section3 {
@@ -385,6 +390,10 @@ body {
           flex-direction: row;
   font-family: "Overpass", sans-serif;
   font-weight: 600;
+}
+
+.section4 .mobile-sec4-img {
+  display: none;
 }
 
 .section4 .content {
@@ -579,9 +588,93 @@ body {
     padding: 10% 0px;
     padding-left: 50%;
   }
+  .section4 .content .mini-head {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
+  .section2 {
+    height: 150vh;
+    padding: 12vh 0;
+  }
+  .section2 .content {
+    height: 80vh;
+    position: relative;
+  }
+  .section2 .text {
+    padding: 6% 80px;
+    text-align: center;
+  }
+  .section2 .text .mini-head {
+    font-size: 26px;
+  }
+  .section2 .image {
+    display: none;
+  }
+  .section2 .mobile-sec2-img {
+    display: block;
+    margin: 50px auto 0 auto;
+  }
+  .section3 {
+    height: 80vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section3 .image {
+    margin: 0 auto;
+  }
+  .section3 .image img {
+    position: unset;
+    margin: -15vh auto 0 auto;
+    height: 55vh;
+  }
+  .section3 .content {
+    padding: 10px 80px;
+    text-align: center;
+  }
+  .section4 {
+    height: 140vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section4 .image {
+    display: none;
+  }
+  .section4 .content {
+    padding: 10% 80px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section4 .content .mini-head {
+    font-size: 26px;
+  }
+  .section4 .content .first, .section4 .content .second {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .section4 .content .first p, .section4 .content .second p {
+    padding: 10px 20px;
+  }
+  .section4 .mobile-sec4-img {
+    display: block;
+    margin-top: 50px;
+    height: 50vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
   body {
     display: none;
   }

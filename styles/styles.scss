@@ -26,7 +26,7 @@ $ubuntu-bold-weight:700;
 $desktop-med:1250px;
 $desktop-min:1000px;
 $tablet:750px;
-$mobile-max:550px;
+$mobile-max:600px;
 $mobile-min:375px;
 
 //Font
@@ -244,6 +244,7 @@ body{
         padding:6% 100px;
         padding-right: 50%;
         align-items: center;
+        text-align: left;
        .mini-head{
         font-size: $large-font;
        }
@@ -270,6 +271,9 @@ body{
             object-fit: contain;
             padding-left: 30%;
         }    
+    }
+    .mobile-sec2-img{
+        display: none;
     }
 }
 
@@ -324,6 +328,9 @@ body{
     flex-direction: row;
     font-family: $second-font;
     font-weight: $overpass-bold-weight;
+    .mobile-sec4-img{
+        display: none;
+    }
     .content{
         display: flex;
         flex-direction: column;
@@ -495,10 +502,83 @@ body{
         .content{
             padding:10% 0px;
             padding-left: 50%;
+            .mini-head{
+                font-size: 22px;
+               }
         }
     }
   }
   @media only screen and (max-width: $tablet){
+    .section2{
+        height:150vh;
+        padding:12vh 0;
+        .content{
+            height:80vh;
+            position: relative;
+        }
+        .text{
+            padding:6% 80px;
+            text-align: center;
+            .mini-head{
+                font-size: $large-font;
+               }
+        }
+        .image{
+            display: none;
+        }
+        .mobile-sec2-img{
+            display: block;
+            margin:50px auto 0 auto;
+        }
+    }
+    .section3{
+        height:80vh;
+        flex-direction: column;
+        .image{
+            margin:0 auto;
+            img{
+                position: unset;
+                margin: -15vh auto 0 auto;
+                height: 55vh;
+            }
+        }
+        .content{
+            padding:10px 80px;
+            text-align: center;
+        }
+    }
+    .section4{
+        height:140vh;
+        flex-direction: column;
+        .image{
+            display: none;   
+        }
+        .content{
+            padding:10% 80px;
+            justify-content: flex-start;
+           .mini-head{
+            font-size: $large-font;
+           }
+           .first,.second{
+               text-align: center;
+               padding:20px 0;
+               p{
+                   padding:10px 20px;
+               }
+           }
+        }
+        .mobile-sec4-img{
+            display: block;
+            margin-top:50px;
+            height:50vh;
+            object-fit: contain;
+            position: relative;
+            left:50%;
+            transform: translate(-50%);
+        }
+    }
+  }
+  @media only screen and (max-width: $mobile-max){
       body{
           display: none;
       }
