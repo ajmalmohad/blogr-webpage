@@ -1,3 +1,5 @@
+luxy.init()
+
 let navbar = document.getElementsByClassName('navlinks')[0];
 let burger = document.getElementsByClassName('burger')[0];
 let active =  false;
